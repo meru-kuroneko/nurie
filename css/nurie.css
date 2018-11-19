@@ -1,0 +1,225 @@
+
+/* nurie.htmlのcss*/
+/* canvas各種設定 */
+
+canvas#can1-line1{
+
+}
+canvas#can2-nuri{
+
+}
+canvas#can3-line2{
+
+}
+canvas#can4-bg{
+
+}
+
+
+canvas.canall{
+	margin-top:12%;
+	background-color: transparent;
+}
+
+/* toolアイコンバー */
+.tools{
+	background-color: #880000;
+	height: 10%;
+}
+html,body{
+height:100%;
+}
+#top{
+	position: absolute;
+	top:0px;
+	width: 100%;
+}
+#bottom{
+	position: absolute;
+	bottom:0px;
+	width: 100%;
+}
+
+/*コピペ*/
+/*　リストタグの装飾　*/
+div.tools ul{
+		list-style: none;
+		padding:10px;
+		display:table-cell;
+		text-align: center;
+	}
+#tool1 li{
+	margin:2px 2px;
+	width:40px;
+	height:40px;
+	-webkit-border-radius:10px;
+	-webkit-box-shadow:0 0 3px #FFF;
+	float:left;
+
+	}
+#tool2 li{
+	margin:2px 2px;
+	width:40px;
+	height:40px;
+	-webkit-border-radius:10px;
+	-webkit-box-shadow:0 0 3px #FFF;
+	float:left;
+	display: table-cell;
+	vertical-align: middle;
+	}
+
+#sizeSample{
+	display:inline-block;
+	float:left;
+	background-color:#fff;
+	width: 2px;
+	height: 2px;
+	border-radius:40px;
+	}
+/*
+関係ないので後々削除
+#clear li,#save li{
+	background-color:#ccc;
+	line-height:40px;
+	font-size:10px;
+	text-align:center;
+	}
+ul#save li:after{
+	content:"";
+	display: block;
+	clear: both;
+}
+*/
+img{
+	padding-top:10%;
+	padding-bottom:10%;
+	padding-left:10%;
+	padding-right:10%;
+	}
+
+#sizeSetter{
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  display:none;
+  z-index: 1000;
+
+  min-width: 200px;
+  max-width: 300px;
+  padding:0px 6px 5px 0px;
+  height:55px;
+  border-radius: 5px;
+  background-color: #ffffff;
+
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#sizeSetter input{
+	float: left;
+	margin: 5px 0px 3px 8px;
+}
+.sizeBtn{
+	display: inline;
+	height: 10px;
+	font-size:13px;
+	padding:4px;
+	margin-left:5px;
+
+	cursor: pointer;
+	background-color: #faddff;
+	border-radius:5px;
+}
+	/**
+ * カラーピッカーのCSS
+ * CSS inspired by Bootstrap Twitter.
+ * See https://github.com/twitter/bootstrap/blob/master/less/dropdowns.less
+ * See http://twitter.github.com/bootstrap/assets/css/bootstrap.css
+ */
+
+#colorpicker:before {
+  position: absolute;
+  top: 100%;
+  left: 9px;
+  display: inline-block;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #ccc;
+  border-left: 7px solid transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  content: '';
+}
+
+#colorpicker:after {
+  position: absolute;
+  top: 100%;
+  left: 10px;
+  display: inline-block;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #ffffff;
+  border-left: 6px solid transparent;
+  content: '';
+}
+
+#colorpicker {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+
+  min-width: 160px;
+  max-width: 500px;
+
+  padding: 4px 0px 0px 4px;
+  margin: -350px 0 0;
+  list-style: none;
+  background-color: #ffffff;
+
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+
+  *border-right-width: 2px;
+  *border-bottom-width: 2px;
+
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+     -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
+}
+
+  #colorpicker ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+    #colorpicker ul li {
+      float: left;
+      margin: 0 4px 4px 0;
+    }
+
+      #colorpicker ul li a {
+        display: block;
+
+        width: 15px;
+        height: 15px;
+
+        text-indent: -100000px;
+      }
+
+      #colorpicker ul li a:hover {
+        width: 13px;
+        height: 13px;
+
+        border: 1px solid black;
+}
+#foo,
+#colorpicker2,p{margin:25px;}

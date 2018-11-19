@@ -1,0 +1,78 @@
+@charset "utf-8";
+/*=================================================
+ * ブラウザのデフォルトのスタイルをリセットする
+ * ================================================= */
+
+html, body, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p,
+header, hgroup, section, article, aside, hgroup, footer, figure, figcaption, nav {
+ margin: 0;
+ padding: 0;
+ font-size: 100%;
+}
+
+
+article,aside,details,canvas,figcaption,figure,
+footer,header,hgroup,menu,nav,div,section,summary {
+ display:block;
+}
+body{
+	color: #a10002;
+	font-size: 18px;
+	font-family: sans-serif;
+	text-align:center;
+
+}
+
+
+#con{
+position:relative;
+height:auto;
+min-height:100%;
+background:url(sozai2.png) ;
+background-repeat:no-repeat;
+background-position:50% 50%;
+margin-left:5%;
+margin-right: 5%;
+
+}
+#con2{
+position:relative;
+height:auto;
+min-height:100%;
+width: 100%;
+background-color: none;
+}
+
+html,body{
+height:100%;
+}
+#topp{margin-top:70%;}
+
+
+ul.sima li{
+/*しましまパターンのコード*/
+	text-decoration:none;
+	background-color: #ffffc4;
+	background-image: -webkit-gradient(linear, 0 0, 100% 100%,color-stop(.25, #ffe4f2), color-stop(.25, transparent),color-stop(.5, transparent), color-stop(.5, #ffe4f2),color-stop(.75, #ffe4f2), color-stop(.75, transparent),to(transparent));
+	-webkit-background-size: 15px 15px;
+/*ここまで！*/
+
+	padding:5px;
+	border:#a10002 solid 1px;
+	-webkit-border-radius:15px;
+	-webkit-box-shadow:1px 1px 3px #a10002;
+	list-style-type: none;
+	margin-left:20%;
+	margin-right: 20%;
+	margin-top:10px;
+	font-family: 'Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	cursor: pointer;
+}
+a:link { color: #a10002; text-decoration:none;  }
+a:visited { color: #a10002; text-decoration:none; }
+a:hover { color: #a10002; text-decoration:none;  }
+a:active { color: #a10002; text-decoration:none;  }
+
+

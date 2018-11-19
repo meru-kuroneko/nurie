@@ -1,0 +1,68 @@
+@charset "utf-8";
+ul#sel-tar li{
+	list-style: none;
+	float: left;
+	margin-left:10px;
+	margin-right: 10px;
+}
+#imgArea{
+	text-align: center;
+	-webkit-border-radius: 15px;
+	width: 100%;
+	background-color: none;
+
+}
+#selectline {
+	display: block;
+	margin: auto;
+	border: solid 3px black;
+	border-radius:10px;
+
+
+}
+.line{
+	border: solid 3px black;
+	height: 100px;
+	width:80px;
+	-webkit-border-radius: 15px;
+	background-color: #ffffff;
+}
+#sel-tar{
+	margin:auto;
+	overflow-x:scroll;
+}
+#target{
+	background-color: #800;
+	margin:auto;
+	position:absolute;
+	padding:10px;
+	width: 650px;
+	overflow-x:scroll;
+}
+ul#sel-tar li:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+#buttonss{
+margin-top:0px;
+}
+p img{
+	border: solid 3px black;
+	margin: 10px;
+}
+#hidari{
+margin-right:70%;
+}
+
+#migi{
+
+}
+#navi{
+	background-color: #800;
+	margin-top:129px;
+	padding:20px 0px 30px 0px;
+	width:110%;
+	text-align: center;
+	padding-bottom: 30px;
+}

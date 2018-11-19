@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>ぬりえ倶楽部</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+<link rel="stylesheet" href="./css/style1.css" media="screen">
+<link rel="stylesheet" href="./css/nurie.css" media="screen">
+</head>
+<body id="nurie">
+<div id="con2">
+<div class="tools" id="top">
+<ul id="tool1">
+	<li id="clear"><img src="./img/bn-clear-n.png" /></li>
+	<li id="andu"><img src="./img/bn-andu-n.png" /></li>
+	<li id="plus"><img src="./img/bn-puls-n.png" /></li>
+	<li id="minus"><img src="./img/bn-minus-n.png" /></li>
+	<li id="hand"><img src="./img/bn-hand-n.png" /></li>
+</ul>
+
+</div>
+
+<canvas class="canall" id="can4-bg" style="position: absolute;">1</canvas>
+<canvas class="canall" id="can3-line2" style="position: absolute;">2</canvas>
+<canvas class="canall" id="can2-nuri" style="position: absolute;">3</canvas>
+<canvas class="canall" id="can1-line1" style="position: absolute;">4</canvas>
+
+<div id="colorpicker">
+</div>
+<div id="sizeSetter">
+	<input id="textValue" type="text" size="2" value="2" onchange="onChangeTextValue(this);">
+	<input id="rangeValue" type="range" max="45" min="1" value="2"onchange="onChangeRangeValue(this);">
+	<br>
+	<div id="ketteiBtn" class="sizeBtn" onclick="onClickOKBtn();">OK</div>
+	<div id="cancelBtn" class="sizeBtn" onclick="onClickCancelBtn();">キャンセル</div>
+</div>
+<div class="tools" id="bottom">
+<ul id="tool2">
+	<li id="pic"></li>
+	<li id="eraser"><img src="./img/bn-eraser-n.png" /></li>
+	<li id="size"><span id="sizeSample"></span></li>
+	<li id="bgcg"><img src="./img/bn-backgr.png" /></li>
+	<li id="save"><img src="./img/bn-save.png" /></li>
+</ul>
+
+</div>
+</div>
+<script src="./js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="./js/jquery-colorpicker.js"></script>
+<script type="text/javascript" src="./js/nurie.js"></script>
+</body>
+</html>

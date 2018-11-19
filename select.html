@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>ぬりえ倶楽部</title>
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="./css/style1.css" media="screen">
+<link rel="stylesheet" href="./css/select.css" media="screen">
+</head>
+<body>
+	<div id="con2">
+		<!-- 選択した線画のエリア -->
+		<div id="imgArea">
+		    <img id="selectline" alt="p01" src="./line/p01.png" />
+		</div>
+		<!-- 線画の一覧・選択部分 -->
+		<div id="target">
+			<ul id="sel-tar">
+				<li><img class="line" src="./line/p01.png" alt="p01" /> </li>
+				<li><img class="line" src="./line/p02.png" alt="p02"/> </li>
+				<li><img class="line" src="./line/p03.png" alt="p03"/> </li>
+				<li><img class="line" src="./line/p04.png" alt="p04"/> </li>
+				<li><img class="line" src="./line/p05.png" alt="p05"/> </li>
+				<li><img class="line" src="./line/p06.png" alt="p06"/> </li>
+			</ul>
+		</div>
+		<div id="navi">
+			<!-- ナビゲーションエリア -->
+				<div id="yajirusi">
+				    <img id="hidari" src="./img/b-hidari.png" alt="left" />
+				    <img id="migi" src="./img/b-migi.png" alt="right" />
+				</div>
+				<nav id="buttonss">
+				<ul class="sima">
+					<li id="start">はじめる</li>
+					<a href="./index.html"><li>トップへ戻る</li></a>
+				</ul>
+				</nav>
+		</div>
+
+		<p></p>
+</div>
+<script src="./js/jquery-1.8.2.min.js"></script>
+<script>
+var selectline = document.getElementById('selectline');
+var start = document.getElementById('start');
+var uketori = 1;
+
+// 画面のサイズを取得して、選択した線画の画像を調整する
+$(document).ready(function () {
+	  hsize = $(window).height();
+	  wsize = $(window).width();
+	  $("body").css("width",wsize);
+	  $("body").css("height",hsize);
+	  $("#con2").css("width",wsize);
+	  $("#con2").css("height",hsize);
+
+	  himg = selectline.height;
+	  wimg = selectline.width;
+	  var hper = hsize / himg;
+	  var wper = wsize / wimg;
+	  // 高さの方が変動割合が小さければ
+	  if(hper < wper) {
+		  hsize = himg * hper *0.6;
+		  wsize = wimg * hper * 0.6;
+	  } else {
+		  hsize = himg * wper * 0.6;
+		  wsize = wimg * wper * 0.6;
+	  }
+	  $("#selectline").css("height", hsize + "px");
+	  $("#selectline").css("width", wsize + "px");
+	});
+
+	$(function() {
+$('ul#sel-tar li').click(function (){
+	var i = $('ul li').index(this)+1;
+	$('#imgArea img').css('display','none');
+	$('#imgArea img').attr('src' , './line/p0' + i + '.png').fadeIn(1000);
+	uketori = i
+	return uketori;
+	});
+});
+
+start.addEventListener('click',kettei);
+function kettei (e) {
+	var date = dateString(new Date());//年-月-日　日:時
+	var sline = {'select':uketori};
+	//配列の先頭にデータを保存
+	sessionStorage.memo = JSON.stringify(sline);//ローカルストレージにJSON(文字)で保存
+	location.href = 'nurie.html'; //ページ移動*/
+}
+function dateString(date){
+	return date.getFullYear() +'-'+ (date.getMonth()+1)+'-'+ date.getDate() +'-'+ date.getHours() +':'+ date.getMinutes();
+	}
+//selectlineSize();
+
+ </script>
+</body>
+</html>
